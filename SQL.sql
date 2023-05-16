@@ -1,0 +1,1 @@
+--cria um banco cadastro com a tabela pessoa e incluir os campos nome, sobrenome, login, email, endereco, pais, estado, cep, senha e  cpf
