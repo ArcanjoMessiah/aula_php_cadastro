@@ -55,9 +55,9 @@
 				}
 			}
 			
-			function atualizar() {
+			function atualizar($nome, $cpf, $email) {
 						
-				if (valida() == true && sessaoautenticada()) {
+				if (valida($nome,$cpf,$email) == true) {
 					
 					// abre conexão com o banco de dados
 					$conn = conectaDB();
@@ -90,7 +90,7 @@
 			}
 			
 			if (isset($_POST["atualizar"]))
-				atualizar();
+				atualizar($nome, $cpf, $email);
 
 		?>
 	</body>
